@@ -40,8 +40,8 @@ parser.add_argument('--learning_rate', type=float, default=1e-3)
 parser.add_argument('--num_epochs', default=500)
 parser.add_argument('--reconstruct_hyperparam', default=1.)
 parser.add_argument('--cluster_hyperparam', default=1.)
-parser.add_argument('--regularization_hyperparam', default=0.001)
-parser.add_argument('--initialization_is_done', default=True)
+parser.add_argument('--regularization_hyperparam', default=0.0001)
+parser.add_argument('--initialization_is_done', default=False)
 parser.add_argument('--do_soft_k_means', default=True)
 
 parser.add_argument('--architecture_visualization_flag', default=1)
@@ -114,7 +114,7 @@ if initialization_is_done == False:
                     verbose=verbose, seed=seed, continue_training=args.continue_training)
 
     ############################## Clustering Pre-trained soft_K_means Features   ##############################
-y_pred, centroids = clustering(dataset, X, y, input_var, encoder, decoder, num_clusters, output_path, 
+    y_pred, centroids = clustering(dataset, X, y, input_var, encoder, decoder, num_clusters, output_path, 
                               test_batch_size=test_batch_size, seed=seed, continue_training=args.continue_training)
     
 
