@@ -1,3 +1,13 @@
+##############################  ##############################
+# DEEP K-MEANS implementation is based heavily on the implementation of DEPICT [1]
+# available in:
+# https://github.com/herandy/DEPICT
+# [1] ] K. Ghasedi Dizaji, A. Herandi, C. Deng, W. Cai, and H. Huang,
+# “Deep clustering via joint convolutional autoencoder embedding
+# and relative entropy minimization,” in International Conference on
+# Computer Vision (ICCV), 2017, pp. 5747–57
+##############################  ##############################
+
 import os
 
 
