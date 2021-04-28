@@ -1,5 +1,5 @@
 ##############################  ##############################
-# DEEP K-MEANS implementation is based heavily on the implementation of DEPICT [1]
+# DEEP K-MEANS implementation is based on the implementation of DEPICT [1]
 # available in:
 # https://github.com/herandy/DEPICT
 # [1] ] K. Ghasedi Dizaji, A. Herandi, C. Deng, W. Cai, and H. Huang,
